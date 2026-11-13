@@ -120,6 +120,13 @@ h2 {
 
 
 /* ---------- TODO 3 — Le morceau en cours ---------- */
+.en-cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
 
 
 
