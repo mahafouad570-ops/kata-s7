@@ -164,3 +164,17 @@ h2 {
 
 
 /* ---------- TODO 6 — Grand écran (768px et plus) ---------- */
+.contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contenu {
+    flex-direction: row;
+  }
+
+  .playlist {
+    flex-grow: 1;
+  }
+}
