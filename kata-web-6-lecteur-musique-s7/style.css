@@ -178,3 +178,17 @@ h2 {
     flex-grow: 1;
   }
 }
+/* Questions de recul
+
+1. align-items marche sur l'autre axe.
+   En row, l'axe principal est horizontal, donc align-items centre en vertical.
+   En column, l'axe principal est vertical, donc align-items centre en horizontal.
+
+2. Sans flex-grow, la barre reste petite et les temps ne sont pas aux bouts.
+   Avec flex-grow sur les deux temps aussi, la place est partagée en trois,
+   donc la barre est plus courte.
+
+3. On commence par le mobile parce que c'est le plus petit écran.
+   Après on ajoute seulement ce qui change pour le grand écran.
+   Comme ça il y a moins de code.
+*/
