@@ -144,6 +144,22 @@ h2 {
 
 
 /* ---------- TODO 5 — La barre de contrôle ---------- */
+.progression {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.barre {
+  flex-grow: 1;
+}
+
+.boutons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
 
 
