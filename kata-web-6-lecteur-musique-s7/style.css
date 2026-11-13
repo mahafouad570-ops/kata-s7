@@ -110,6 +110,12 @@ h2 {
 
 
 /* ---------- TODO 2 — L'en-tête ---------- */
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
 
 
 
