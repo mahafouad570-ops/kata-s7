@@ -81,6 +81,24 @@ afficherPlantes(plantes);
 // Au clic sur « Extérieur » : seulement celles d'extérieur.
 // Au clic sur « Toutes » : toutes les plantes.
 // Les gestionnaires sont des fonctions fléchées : () => { ... }
+const btnToutes = document.getElementById("btn-toutes");
+const btnInterieur = document.getElementById("btn-interieur");
+const btnExterieur = document.getElementById("btn-exterieur");
+
+btnToutes.addEventListener("click", () => {
+    afficherPlantes(plantes);
+});
+
+btnInterieur.addEventListener("click", () => {
+    const resultat = filtrerParLieu(plantes, "intérieur");
+    afficherPlantes(resultat);
+});
+
+btnExterieur.addEventListener("click", () => {
+    const resultat = filtrerParLieu(plantes, "extérieur");
+    afficherPlantes(resultat);
+});
+
 
 
 
