@@ -87,16 +87,21 @@ const btnExterieur = document.getElementById("btn-exterieur");
 
 btnToutes.addEventListener("click", () => {
     afficherPlantes(plantes);
+    activerBouton(btnToutes);
 });
 
 btnInterieur.addEventListener("click", () => {
     const resultat = filtrerParLieu(plantes, "intérieur");
     afficherPlantes(resultat);
+    activerBouton(btnInterieur);
+
 });
 
 btnExterieur.addEventListener("click", () => {
     const resultat = filtrerParLieu(plantes, "extérieur");
     afficherPlantes(resultat);
+    activerBouton(btnExterieur);
+
 });
 
 
@@ -104,7 +109,12 @@ btnExterieur.addEventListener("click", () => {
 
 // TODO 6 — Le bouton actif
 // Le bouton cliqué prend la classe "actif", les deux autres la perdent.
-
+function activerBouton(bouton) {
+    btnToutes.classList.remove("actif");
+    btnInterieur.classList.remove("actif");
+    btnExterieur.classList.remove("actif");
+    bouton.classList.add("actif");
+}
 
 
 // =====================================================
