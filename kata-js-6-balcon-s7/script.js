@@ -119,7 +119,13 @@ function activerBouton(bouton) {
 
 // =====================================================
 // Questions de recul (réponds en commentaire ici)
-// 1.
-// 2.
-// 3.
+// 1. On peut tester compterAArroser et filtrerParLieu avec Jest :
+//    elles reçoivent des données et retournent un résultat, sans toucher à la page.
+//    On ne peut pas tester afficherPlantes facilement : elle modifie la page
+//    et ne retourne rien.
+// 2. Si on ne vide pas la liste, les plantes s'ajoutent à chaque clic :
+//    les anciennes restent et la liste devient de plus en plus longue.
+// 3. Si script.js est avant plantes.js, la console affiche
+//    "plantes is not defined" : le script utilise plantes
+//    alors que le fichier des données n'est pas encore chargé.
 // =====================================================
