@@ -53,10 +53,22 @@ return resultat;
 // 4. Mets à jour <p id="compteur"> : « 4 plantes à arroser sur 8 »
 //    (utilise compterAArroser, ne recompte pas ici)
 function afficherPlantes(liste) {
+    const ul = document.getElementById("liste");
+    ul.textContent = "";
 
+    liste.forEach((plante) => {
+        const li = document.createElement("li");
+        li.textContent = plante.emoji + " " + plante.nom;
+    if ( plante.aArroser) {
+        li.classList.add("a-arroser");
+    }    
+    ul.appendChild(li);
+
+});
+
+const compteur = document.getElementById("compteur");
+compteur.textContent = compterAArroser(liste) + " plantes à arroser sur " + liste.length;
 }
-
-
 // TODO 4 — Au chargement de la page, affiche toutes les plantes.
 
 
