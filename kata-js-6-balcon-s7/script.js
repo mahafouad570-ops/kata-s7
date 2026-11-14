@@ -30,10 +30,16 @@ console.log(compterAArroser(plantes)) // doit afficher 4
 // Retourne un NOUVEAU tableau avec seulement les plantes dont le lieu
 // est égal au paramètre lieu ("intérieur" ou "extérieur").
 function filtrerParLieu(liste, lieu) {
-
+    const resultat = [];
+    liste.forEach((plante) => {
+        if (plante.lieu === lieu) {
+            resultat.push(plante);
+        }
+    });
+return resultat;
 }
 
-// console.log(filtrerParLieu(plantes, "intérieur")) // doit afficher 4 plantes
+ console.log(filtrerParLieu(plantes, "intérieur")) // doit afficher 4 plantes
 
 
 // ---------- PARTIE 2 : les fonctions qui AFFICHENT ----------
