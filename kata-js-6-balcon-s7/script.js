@@ -70,7 +70,7 @@ const compteur = document.getElementById("compteur");
 compteur.textContent = compterAArroser(liste) + " plantes à arroser sur " + liste.length;
 }
 // TODO 4 — Au chargement de la page, affiche toutes les plantes.
-
+afficherPlantes(plantes);
 
 
 // ---------- PARTIE 3 : les clics ----------
